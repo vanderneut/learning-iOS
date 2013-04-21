@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EVViewController : UIViewController
-
+- (IBAction)changeColor:(id)sender;
 @end
