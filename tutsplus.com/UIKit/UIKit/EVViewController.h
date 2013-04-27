@@ -10,4 +10,9 @@
 
 @interface EVViewController : UIViewController
 
+@property IBOutlet UILabel *myLabel;
+@property IBOutlet UIButton *myButton;
+
+- (IBAction)changeColor:(id)sender;
+
 @end

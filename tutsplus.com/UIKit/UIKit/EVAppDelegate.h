@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class EVViewController;
+@class EVViewController;    // Forward class declaration: this class exists; bit like an import
 
 @interface EVAppDelegate : UIResponder <UIApplicationDelegate>
 
