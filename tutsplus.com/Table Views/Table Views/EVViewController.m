@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    self.fruits = @[@"Apple", @"Pineapple", @"Orange", @"Banana", @"Pear", @"Kiwi", @"Strawberry", @"Mango", @"Walnut", @"Apricot", @"Tomato", @"Almond", @"Date", @"Melon", @"Water Melon", @"Lemon", @"Blackberry", @"Coconut", @"Fig", @"Passionfruit", @"Star Fruit", @"Leechee", @"Durian"];
+    self.fruits = @[@"Apple", @"Pineapple", @"Orange", @"Banana", @"Pear", @"Kiwi", @"Strawberry", @"Mango", @"Walnut", @"Apricot", @"Tomato", @"Almond", @"Date", @"Melon", @"Water Melon", @"Lemon", @"Blackberry", @"Coconut", @"Fig", @"Passionfruit", @"Star Fruit", @"Leechee", @"Durian", @"Lime", @"Grapefruit", @"Grapes", @"Cantilope"];
     
     self.alphabetizedFruits = [self alphabetizeFruits:self.fruits];
 }
@@ -43,6 +43,15 @@
     NSArray *fruitsForSection = [self.alphabetizedFruits objectForKey:key];
     
     return fruitsForSection ? [fruitsForSection count] : 0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSArray  *unsortedKeys = [self.alphabetizedFruits allKeys];
+    NSArray  *sortedKeys = [unsortedKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSString *key = [sortedKeys objectAtIndex:section];
+
+    return key;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
