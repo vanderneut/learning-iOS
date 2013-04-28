@@ -111,4 +111,15 @@
     return result;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray  *unsortedKeys     = [self.alphabetizedFruits allKeys];
+    NSArray  *sortedKeys       = [unsortedKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSString *key              = [sortedKeys objectAtIndex:[indexPath section]];
+    NSArray  *fruitsForSection = [self.alphabetizedFruits objectForKey:key];
+    NSString *fruit            = [fruitsForSection objectAtIndex:[indexPath row]];
+    
+    NSLog(@"Fruit selected > %@", fruit);
+}
+
 @end
