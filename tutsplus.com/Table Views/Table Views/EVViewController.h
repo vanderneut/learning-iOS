@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EVViewController : UIViewController
+@interface EVViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property NSArray *fruits;
+@property NSDictionary *alphabetizedFruits;
 
 @end
