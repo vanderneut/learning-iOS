@@ -37,7 +37,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.fruits ? [self.fruits count] : 0;
+    NSArray *unsortedKeys = [self.alphabetizedFruits allKeys];
+    NSArray *sortedKeys = [unsortedKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSString *key = [sortedKeys objectAtIndex:section];
+    NSArray *fruitsForSection = [self.alphabetizedFruits objectForKey:key];
+    
+    return fruitsForSection ? [fruitsForSection count] : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -52,7 +57,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Populate the table view cell with fruit data:
-    NSString *fruit = [self.fruits objectAtIndex:[indexPath row]];
+    NSArray  *unsortedKeys = [self.alphabetizedFruits allKeys];
+    NSArray  *sortedKeys = [unsortedKeys sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    NSString *key = [sortedKeys objectAtIndex:[indexPath section]];
+    NSArray  *fruitsForSection = [self.alphabetizedFruits objectForKey:key];
+    NSString *fruit = [fruitsForSection objectAtIndex:[indexPath row]];
     [cell.textLabel setText:fruit];
     
     return cell;
