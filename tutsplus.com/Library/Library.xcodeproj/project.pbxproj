@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032113F8173F531E0050CCF5 /* EVAuthorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032113F7173F531E0050CCF5 /* EVAuthorsViewController.m */; };
+		032113FB173FD95D0050CCF5 /* EVBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032113FA173FD95D0050CCF5 /* EVBooksViewController.m */; };
+		032113FF173FE8DD0050CCF5 /* EVBookCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032113FD173FE8DD0050CCF5 /* EVBookCoverViewController.m */; };
+		03211400173FE8DD0050CCF5 /* EVBookCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032113FE173FE8DD0050CCF5 /* EVBookCoverViewController.xib */; };
+		03A129A5172D9DE100DBE5AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A129A4172D9DE100DBE5AE /* UIKit.framework */; };
+		03A129A7172D9DE100DBE5AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A129A6172D9DE100DBE5AE /* Foundation.framework */; };
+		03A129A9172D9DE100DBE5AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A129A8172D9DE100DBE5AE /* CoreGraphics.framework */; };
+		03A129AF172D9DE100DBE5AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03A129AD172D9DE100DBE5AE /* InfoPlist.strings */; };
+		03A129B1172D9DE100DBE5AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A129B0172D9DE100DBE5AE /* main.m */; };
+		03A129B5172D9DE100DBE5AE /* EVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A129B4172D9DE100DBE5AE /* EVAppDelegate.m */; };
+		03A129B7172D9DE100DBE5AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A129B6172D9DE100DBE5AE /* Default.png */; };
+		03A129B9172D9DE100DBE5AE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A129B8172D9DE100DBE5AE /* Default@2x.png */; };
+		03A129BB172D9DE100DBE5AE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A129BA172D9DE100DBE5AE /* Default-568h@2x.png */; };
+		03A129DF172D9ED000DBE5AE /* Books.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C2172D9ED000DBE5AE /* Books.plist */; };
+		03A129E0172D9ED000DBE5AE /* angels-demons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C4172D9ED000DBE5AE /* angels-demons.jpg */; };
+		03A129E1172D9ED000DBE5AE /* azkaban.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C5172D9ED000DBE5AE /* azkaban.jpg */; };
+		03A129E2172D9ED000DBE5AE /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C6172D9ED000DBE5AE /* background.jpg */; };
+		03A129E3172D9ED000DBE5AE /* bard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C7172D9ED000DBE5AE /* bard.jpg */; };
+		03A129E4172D9ED000DBE5AE /* bilbo-song.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C8172D9ED000DBE5AE /* bilbo-song.png */; };
+		03A129E5172D9ED000DBE5AE /* blindsight.png in Resources */ = {isa = PBXBuildFile; fileRef = 03A129C9172D9ED000DBE5AE /* blindsight.png */; };
+		03A129E6172D9ED000DBE5AE /* brain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129CA172D9ED000DBE5AE /* brain.jpg */; };
+		03A129E7172D9ED000DBE5AE /* chamber.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129CB172D9ED000DBE5AE /* chamber.jpg */; };
+		03A129E8172D9ED000DBE5AE /* da-vinci-code.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129CC172D9ED000DBE5AE /* da-vinci-code.jpg */; };
+		03A129E9172D9ED000DBE5AE /* deception-point.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129CD172D9ED000DBE5AE /* deception-point.jpg */; };
+		03A129EA172D9ED000DBE5AE /* digital-fortress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129CE172D9ED000DBE5AE /* digital-fortress.jpg */; };
+		03A129EB172D9ED000DBE5AE /* fatal-cure.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129CF172D9ED000DBE5AE /* fatal-cure.jpeg */; };
+		03A129EC172D9ED000DBE5AE /* fellowship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D0172D9ED000DBE5AE /* fellowship.jpg */; };
+		03A129ED172D9ED000DBE5AE /* fever.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D1172D9ED000DBE5AE /* fever.jpg */; };
+		03A129EE172D9ED000DBE5AE /* goblet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D2172D9ED000DBE5AE /* goblet.jpg */; };
+		03A129EF172D9ED000DBE5AE /* hallows.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D3172D9ED000DBE5AE /* hallows.jpg */; };
+		03A129F0172D9ED000DBE5AE /* intervention.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D4172D9ED000DBE5AE /* intervention.jpg */; };
+		03A129F1172D9ED000DBE5AE /* invasion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D5172D9ED000DBE5AE /* invasion.jpg */; };
+		03A129F2172D9ED000DBE5AE /* lost-symbol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D6172D9ED000DBE5AE /* lost-symbol.jpg */; };
+		03A129F3172D9ED000DBE5AE /* phoenix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D7172D9ED000DBE5AE /* phoenix.jpg */; };
+		03A129F4172D9ED000DBE5AE /* prince.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D8172D9ED000DBE5AE /* prince.jpg */; };
+		03A129F5172D9ED000DBE5AE /* return-king.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129D9172D9ED000DBE5AE /* return-king.jpg */; };
+		03A129F6172D9ED000DBE5AE /* shock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129DA172D9ED000DBE5AE /* shock.jpg */; };
+		03A129F7172D9ED000DBE5AE /* sphinx.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129DB172D9ED000DBE5AE /* sphinx.jpeg */; };
+		03A129F8172D9ED000DBE5AE /* stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129DC172D9ED000DBE5AE /* stone.jpg */; };
+		03A129F9172D9ED000DBE5AE /* the-hobbit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129DD172D9ED000DBE5AE /* the-hobbit.jpg */; };
+		03A129FA172D9ED000DBE5AE /* two-towers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 03A129DE172D9ED000DBE5AE /* two-towers.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032113F6173F531E0050CCF5 /* EVAuthorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAuthorsViewController.h; sourceTree = "<group>"; };
+		032113F7173F531E0050CCF5 /* EVAuthorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAuthorsViewController.m; sourceTree = "<group>"; };
+		032113F9173FD95D0050CCF5 /* EVBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVBooksViewController.h; sourceTree = "<group>"; };
+		032113FA173FD95D0050CCF5 /* EVBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVBooksViewController.m; sourceTree = "<group>"; };
+		032113FC173FE8DD0050CCF5 /* EVBookCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVBookCoverViewController.h; sourceTree = "<group>"; };
+		032113FD173FE8DD0050CCF5 /* EVBookCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVBookCoverViewController.m; sourceTree = "<group>"; };
+		032113FE173FE8DD0050CCF5 /* EVBookCoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EVBookCoverViewController.xib; sourceTree = "<group>"; };
+		03A129A1172D9DE100DBE5AE /* Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Library.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A129A4172D9DE100DBE5AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03A129A6172D9DE100DBE5AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03A129A8172D9DE100DBE5AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03A129AC172D9DE100DBE5AE /* Library-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Library-Info.plist"; sourceTree = "<group>"; };
+		03A129AE172D9DE100DBE5AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03A129B0172D9DE100DBE5AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03A129B2172D9DE100DBE5AE /* Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Library-Prefix.pch"; sourceTree = "<group>"; };
+		03A129B3172D9DE100DBE5AE /* EVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EVAppDelegate.h; sourceTree = "<group>"; };
+		03A129B4172D9DE100DBE5AE /* EVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVAppDelegate.m; sourceTree = "<group>"; };
+		03A129B6172D9DE100DBE5AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		03A129B8172D9DE100DBE5AE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		03A129BA172D9DE100DBE5AE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		03A129C2172D9ED000DBE5AE /* Books.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Books.plist; sourceTree = "<group>"; };
+		03A129C4172D9ED000DBE5AE /* angels-demons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "angels-demons.jpg"; sourceTree = "<group>"; };
+		03A129C5172D9ED000DBE5AE /* azkaban.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = azkaban.jpg; sourceTree = "<group>"; };
+		03A129C6172D9ED000DBE5AE /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		03A129C7172D9ED000DBE5AE /* bard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bard.jpg; sourceTree = "<group>"; };
+		03A129C8172D9ED000DBE5AE /* bilbo-song.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bilbo-song.png"; sourceTree = "<group>"; };
+		03A129C9172D9ED000DBE5AE /* blindsight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blindsight.png; sourceTree = "<group>"; };
+		03A129CA172D9ED000DBE5AE /* brain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brain.jpg; sourceTree = "<group>"; };
+		03A129CB172D9ED000DBE5AE /* chamber.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chamber.jpg; sourceTree = "<group>"; };
+		03A129CC172D9ED000DBE5AE /* da-vinci-code.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "da-vinci-code.jpg"; sourceTree = "<group>"; };
+		03A129CD172D9ED000DBE5AE /* deception-point.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "deception-point.jpg"; sourceTree = "<group>"; };
+		03A129CE172D9ED000DBE5AE /* digital-fortress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "digital-fortress.jpg"; sourceTree = "<group>"; };
+		03A129CF172D9ED000DBE5AE /* fatal-cure.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fatal-cure.jpeg"; sourceTree = "<group>"; };
+		03A129D0172D9ED000DBE5AE /* fellowship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fellowship.jpg; sourceTree = "<group>"; };
+		03A129D1172D9ED000DBE5AE /* fever.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fever.jpg; sourceTree = "<group>"; };
+		03A129D2172D9ED000DBE5AE /* goblet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goblet.jpg; sourceTree = "<group>"; };
+		03A129D3172D9ED000DBE5AE /* hallows.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hallows.jpg; sourceTree = "<group>"; };
+		03A129D4172D9ED000DBE5AE /* intervention.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = intervention.jpg; sourceTree = "<group>"; };
+		03A129D5172D9ED000DBE5AE /* invasion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = invasion.jpg; sourceTree = "<group>"; };
+		03A129D6172D9ED000DBE5AE /* lost-symbol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "lost-symbol.jpg"; sourceTree = "<group>"; };
+		03A129D7172D9ED000DBE5AE /* phoenix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phoenix.jpg; sourceTree = "<group>"; };
+		03A129D8172D9ED000DBE5AE /* prince.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prince.jpg; sourceTree = "<group>"; };
+		03A129D9172D9ED000DBE5AE /* return-king.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "return-king.jpg"; sourceTree = "<group>"; };
+		03A129DA172D9ED000DBE5AE /* shock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shock.jpg; sourceTree = "<group>"; };
+		03A129DB172D9ED000DBE5AE /* sphinx.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sphinx.jpeg; sourceTree = "<group>"; };
+		03A129DC172D9ED000DBE5AE /* stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stone.jpg; sourceTree = "<group>"; };
+		03A129DD172D9ED000DBE5AE /* the-hobbit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "the-hobbit.jpg"; sourceTree = "<group>"; };
+		03A129DE172D9ED000DBE5AE /* two-towers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-towers.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A1299E172D9DE100DBE5AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A129A5172D9DE100DBE5AE /* UIKit.framework in Frameworks */,
+				03A129A7172D9DE100DBE5AE /* Foundation.framework in Frameworks */,
+				03A129A9172D9DE100DBE5AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A12998172D9DE100DBE5AE = {
+			isa = PBXGroup;
+			children = (
+				03A129C1172D9ED000DBE5AE /* Resources */,
+				03A129AA172D9DE100DBE5AE /* Library */,
+				03A129A3172D9DE100DBE5AE /* Frameworks */,
+				03A129A2172D9DE100DBE5AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03A129A2172D9DE100DBE5AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03A129A1172D9DE100DBE5AE /* Library.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03A129A3172D9DE100DBE5AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03A129A4172D9DE100DBE5AE /* UIKit.framework */,
+				03A129A6172D9DE100DBE5AE /* Foundation.framework */,
+				03A129A8172D9DE100DBE5AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03A129AA172D9DE100DBE5AE /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				03A129B3172D9DE100DBE5AE /* EVAppDelegate.h */,
+				03A129B4172D9DE100DBE5AE /* EVAppDelegate.m */,
+				032113F6173F531E0050CCF5 /* EVAuthorsViewController.h */,
+				032113F7173F531E0050CCF5 /* EVAuthorsViewController.m */,
+				032113F9173FD95D0050CCF5 /* EVBooksViewController.h */,
+				032113FA173FD95D0050CCF5 /* EVBooksViewController.m */,
+				03A129AB172D9DE100DBE5AE /* Supporting Files */,
+				032113FC173FE8DD0050CCF5 /* EVBookCoverViewController.h */,
+				032113FD173FE8DD0050CCF5 /* EVBookCoverViewController.m */,
+				032113FE173FE8DD0050CCF5 /* EVBookCoverViewController.xib */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		03A129AB172D9DE100DBE5AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03A129AC172D9DE100DBE5AE /* Library-Info.plist */,
+				03A129AD172D9DE100DBE5AE /* InfoPlist.strings */,
+				03A129B0172D9DE100DBE5AE /* main.m */,
+				03A129B2172D9DE100DBE5AE /* Library-Prefix.pch */,
+				03A129B6172D9DE100DBE5AE /* Default.png */,
+				03A129B8172D9DE100DBE5AE /* Default@2x.png */,
+				03A129BA172D9DE100DBE5AE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03A129C1172D9ED000DBE5AE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03A129C2172D9ED000DBE5AE /* Books.plist */,
+				03A129C3172D9ED000DBE5AE /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03A129C3172D9ED000DBE5AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				03A129C4172D9ED000DBE5AE /* angels-demons.jpg */,
+				03A129C5172D9ED000DBE5AE /* azkaban.jpg */,
+				03A129C6172D9ED000DBE5AE /* background.jpg */,
+				03A129C7172D9ED000DBE5AE /* bard.jpg */,
+				03A129C8172D9ED000DBE5AE /* bilbo-song.png */,
+				03A129C9172D9ED000DBE5AE /* blindsight.png */,
+				03A129CA172D9ED000DBE5AE /* brain.jpg */,
+				03A129CB172D9ED000DBE5AE /* chamber.jpg */,
+				03A129CC172D9ED000DBE5AE /* da-vinci-code.jpg */,
+				03A129CD172D9ED000DBE5AE /* deception-point.jpg */,
+				03A129CE172D9ED000DBE5AE /* digital-fortress.jpg */,
+				03A129CF172D9ED000DBE5AE /* fatal-cure.jpeg */,
+				03A129D0172D9ED000DBE5AE /* fellowship.jpg */,
+				03A129D1172D9ED000DBE5AE /* fever.jpg */,
+				03A129D2172D9ED000DBE5AE /* goblet.jpg */,
+				03A129D3172D9ED000DBE5AE /* hallows.jpg */,
+				03A129D4172D9ED000DBE5AE /* intervention.jpg */,
+				03A129D5172D9ED000DBE5AE /* invasion.jpg */,
+				03A129D6172D9ED000DBE5AE /* lost-symbol.jpg */,
+				03A129D7172D9ED000DBE5AE /* phoenix.jpg */,
+				03A129D8172D9ED000DBE5AE /* prince.jpg */,
+				03A129D9172D9ED000DBE5AE /* return-king.jpg */,
+				03A129DA172D9ED000DBE5AE /* shock.jpg */,
+				03A129DB172D9ED000DBE5AE /* sphinx.jpeg */,
+				03A129DC172D9ED000DBE5AE /* stone.jpg */,
+				03A129DD172D9ED000DBE5AE /* the-hobbit.jpg */,
+				03A129DE172D9ED000DBE5AE /* two-towers.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03A129A0172D9DE100DBE5AE /* Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03A129BE172D9DE100DBE5AE /* Build configuration list for PBXNativeTarget "Library" */;
+			buildPhases = (
+				03A1299D172D9DE100DBE5AE /* Sources */,
+				03A1299E172D9DE100DBE5AE /* Frameworks */,
+				03A1299F172D9DE100DBE5AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Library;
+			productName = Library;
+			productReference = 03A129A1172D9DE100DBE5AE /* Library.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03A12999172D9DE100DBE5AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EV;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Erik van der Neut";
+			};
+			buildConfigurationList = 03A1299C172D9DE100DBE5AE /* Build configuration list for PBXProject "Library" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03A12998172D9DE100DBE5AE;
+			productRefGroup = 03A129A2172D9DE100DBE5AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03A129A0172D9DE100DBE5AE /* Library */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03A1299F172D9DE100DBE5AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A129AF172D9DE100DBE5AE /* InfoPlist.strings in Resources */,
+				03A129B7172D9DE100DBE5AE /* Default.png in Resources */,
+				03A129B9172D9DE100DBE5AE /* Default@2x.png in Resources */,
+				03A129BB172D9DE100DBE5AE /* Default-568h@2x.png in Resources */,
+				03A129DF172D9ED000DBE5AE /* Books.plist in Resources */,
+				03A129E0172D9ED000DBE5AE /* angels-demons.jpg in Resources */,
+				03A129E1172D9ED000DBE5AE /* azkaban.jpg in Resources */,
+				03A129E2172D9ED000DBE5AE /* background.jpg in Resources */,
+				03A129E3172D9ED000DBE5AE /* bard.jpg in Resources */,
+				03A129E4172D9ED000DBE5AE /* bilbo-song.png in Resources */,
+				03A129E5172D9ED000DBE5AE /* blindsight.png in Resources */,
+				03A129E6172D9ED000DBE5AE /* brain.jpg in Resources */,
+				03A129E7172D9ED000DBE5AE /* chamber.jpg in Resources */,
+				03A129E8172D9ED000DBE5AE /* da-vinci-code.jpg in Resources */,
+				03A129E9172D9ED000DBE5AE /* deception-point.jpg in Resources */,
+				03A129EA172D9ED000DBE5AE /* digital-fortress.jpg in Resources */,
+				03A129EB172D9ED000DBE5AE /* fatal-cure.jpeg in Resources */,
+				03A129EC172D9ED000DBE5AE /* fellowship.jpg in Resources */,
+				03A129ED172D9ED000DBE5AE /* fever.jpg in Resources */,
+				03A129EE172D9ED000DBE5AE /* goblet.jpg in Resources */,
+				03A129EF172D9ED000DBE5AE /* hallows.jpg in Resources */,
+				03A129F0172D9ED000DBE5AE /* intervention.jpg in Resources */,
+				03A129F1172D9ED000DBE5AE /* invasion.jpg in Resources */,
+				03A129F2172D9ED000DBE5AE /* lost-symbol.jpg in Resources */,
+				03A129F3172D9ED000DBE5AE /* phoenix.jpg in Resources */,
+				03A129F4172D9ED000DBE5AE /* prince.jpg in Resources */,
+				03A129F5172D9ED000DBE5AE /* return-king.jpg in Resources */,
+				03A129F6172D9ED000DBE5AE /* shock.jpg in Resources */,
+				03A129F7172D9ED000DBE5AE /* sphinx.jpeg in Resources */,
+				03A129F8172D9ED000DBE5AE /* stone.jpg in Resources */,
+				03A129F9172D9ED000DBE5AE /* the-hobbit.jpg in Resources */,
+				03A129FA172D9ED000DBE5AE /* two-towers.jpg in Resources */,
+				03211400173FE8DD0050CCF5 /* EVBookCoverViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03A1299D172D9DE100DBE5AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A129B1172D9DE100DBE5AE /* main.m in Sources */,
+				03A129B5172D9DE100DBE5AE /* EVAppDelegate.m in Sources */,
+				032113F8173F531E0050CCF5 /* EVAuthorsViewController.m in Sources */,
+				032113FB173FD95D0050CCF5 /* EVBooksViewController.m in Sources */,
+				032113FF173FE8DD0050CCF5 /* EVBookCoverViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03A129AD172D9DE100DBE5AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03A129AE172D9DE100DBE5AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03A129BC172D9DE100DBE5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03A129BD172D9DE100DBE5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03A129BF172D9DE100DBE5AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Library/Library-Prefix.pch";
+				INFOPLIST_FILE = "Library/Library-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03A129C0172D9DE100DBE5AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Library/Library-Prefix.pch";
+				INFOPLIST_FILE = "Library/Library-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A1299C172D9DE100DBE5AE /* Build configuration list for PBXProject "Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A129BC172D9DE100DBE5AE /* Debug */,
+				03A129BD172D9DE100DBE5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03A129BE172D9DE100DBE5AE /* Build configuration list for PBXNativeTarget "Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A129BF172D9DE100DBE5AE /* Debug */,
+				03A129C0172D9DE100DBE5AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03A12999172D9DE100DBE5AE /* Project object */;
+}
