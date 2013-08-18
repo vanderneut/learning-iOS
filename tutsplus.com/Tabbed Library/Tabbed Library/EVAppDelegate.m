@@ -8,6 +8,7 @@
 
 #import "EVAppDelegate.h"
 #import "EVAuthorsViewController.h"
+#import "EVAllBooksViewController.h"
 
 @implementation EVAppDelegate
 
@@ -19,8 +20,20 @@
     // Initialize Authors view controller:
     EVAuthorsViewController *authorsViewController = [[EVAuthorsViewController alloc] init];
     
+    // Initialize Navigation Controller:
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:authorsViewController];
+    
+    // Initialize all-books view controller:
+    EVAllBooksViewController *allBooksViewController = [[EVAllBooksViewController alloc] init];
+    
+    // Initialize an additional series of view controllers to demonstrate how the tab bar controller handles that:
+    EVAllBooksViewController *vc3 = [[EVAllBooksViewController alloc] init];
+    EVAllBooksViewController *vc4 = [[EVAllBooksViewController alloc] init];
+    EVAllBooksViewController *vc5 = [[EVAllBooksViewController alloc] init];
+    EVAllBooksViewController *vc6 = [[EVAllBooksViewController alloc] init];
+    
     // Set view controllers Tab Bar controller:
-    [tabBarController setViewControllers:@[authorsViewController]];
+    [tabBarController setViewControllers:@[navigationController, allBooksViewController, vc3, vc4, vc5, vc6]];
     
     // Initialize window:
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

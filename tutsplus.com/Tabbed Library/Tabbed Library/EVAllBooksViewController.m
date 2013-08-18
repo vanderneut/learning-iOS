@@ -1,19 +1,18 @@
 //
-//  EVAuthorsViewController.m
-//  Library
+//  EVAllBooksViewController.m
+//  Tabbed Library
 //
-//  Created by Erik van der Neut on 5/12/13.
+//  Created by Erik van der Neut on 18/08/13.
 //  Copyright (c) 2013 Erik van der Neut. All rights reserved.
 //
 
-#import "EVAuthorsViewController.h"
-#import "EVBooksViewController.h"
+#import "EVAllBooksViewController.h"
 
-@interface EVAuthorsViewController ()
-
+@interface EVAllBooksViewController ()
+@property NSArray *books;
 @end
 
-@implementation EVAuthorsViewController
+@implementation EVAllBooksViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -21,12 +20,12 @@
     if (self)
     {
         // Set title so it's visible before the tab is even selected:
-        self.title = @"Authors";
+        self.title = @"Books";
         
         // Also set the tab bar item icon image:
-//        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:[self title] image:[UIImage imageNamed:@"icon-authors"] tag:0];
-
-        [self.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"icon-authors"] withFinishedUnselectedImage:[UIImage imageNamed:@"icon-authors"]];
+ //       self.tabBarItem = [[UITabBarItem alloc] initWithTitle:[self title] image:[UIImage imageNamed:@"icon-books"] tag:1];
+        
+        [self.tabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"icon-books"] withFinishedUnselectedImage:[UIImage imageNamed:@"icon-books"]];
     }
     return self;
 }
@@ -41,11 +40,30 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.title = @"Authors";
+    // Set title:
+    self.title = @"Books";
     
-    NSString *dataFilePath = [[NSBundle mainBundle] pathForResource:@"Books" ofType:@"plist"];
-    self.authors = [NSArray arrayWithContentsOfFile:dataFilePath];
-    //    NSLog(@"authors: %@", self.authors);
+    // Extract books:
+    self.books = [self extractBooks];
+}
+
+- (NSArray *) extractBooks
+{
+    // Load authors:
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Books" ofType:@"plist"];
+    NSArray *authors = [NSArray arrayWithContentsOfFile:filePath];
+    NSMutableArray *buffer = [[NSMutableArray alloc] init];
+    for (int i = 0; i < [authors count]; i++)
+    {
+        // Add books to the buffer:
+        NSDictionary *author = [authors objectAtIndex:i];
+        [buffer addObjectsFromArray:[author objectForKey:@"Books"]];
+    }
+    
+    // Sort books alphabetically:
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"Title" ascending:YES];
+    NSArray *result = [buffer sortedArrayUsingDescriptors:@[sortDescriptor]];
+    return result;
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,27 +76,27 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Only one section in this table, so simply return value of 1:
+    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // One row in the table for each author:
-    return [self.authors count];
+    // Return the number of rows in the section.
+    return [self.books count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Cell Identifier";
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-
-    // Fetch author:
-    NSDictionary *author = [self.authors objectAtIndex:[indexPath row]];
     
-    // Configure the cell:
-    [cell.textLabel setText:[author objectForKey:@"Author"]];
+    // Fetch book:
+    NSDictionary *book = [self.books objectAtIndex:[indexPath row]];
+    
+    // Configure cell:
+    [cell.textLabel setText:[book objectForKey:@"Title"]];
     
     return cell;
 }
@@ -126,18 +144,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Initialize books view controller:
-    EVBooksViewController *booksViewController = [[EVBooksViewController alloc] init];
-    NSLog(@"Books View Controller > %@", booksViewController);
-    
-    // Fetch and set the author for the selected books view:
-    NSDictionary *author = [self.authors objectAtIndex:[indexPath row]];
-    [booksViewController setAuthor:[author objectForKey:@"Author"]];
-    NSLog(@"Author > %@", booksViewController.author);
-    
-    // Push view controller on the navigation stack:
-    NSLog(@"Navigation Controller > %@", self.navigationController);
-    [self.navigationController pushViewController:booksViewController animated:YES];
+    // Navigation logic may go here. Create and push another view controller.
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     */
 }
 
 @end

@@ -47,6 +47,11 @@
 		032114A717402CCB0050CCF5 /* stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0321148B17402CCB0050CCF5 /* stone.jpg */; };
 		032114A817402CCB0050CCF5 /* the-hobbit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0321148C17402CCB0050CCF5 /* the-hobbit.jpg */; };
 		032114A917402CCB0050CCF5 /* two-towers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0321148D17402CCB0050CCF5 /* two-towers.jpg */; };
+		03DFE05617C0B7620032CC48 /* EVAllBooksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DFE05517C0B7620032CC48 /* EVAllBooksViewController.m */; };
+		03DFE05D17C178900032CC48 /* icon-authors.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFE05C17C178900032CC48 /* icon-authors.png */; };
+		03DFE06117C178A10032CC48 /* icon-authors@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFE05E17C178A10032CC48 /* icon-authors@2x.png */; };
+		03DFE06217C178A10032CC48 /* icon-books.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFE05F17C178A10032CC48 /* icon-books.png */; };
+		03DFE06317C178A10032CC48 /* icon-books@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03DFE06017C178A10032CC48 /* icon-books@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +103,12 @@
 		0321148B17402CCB0050CCF5 /* stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stone.jpg; sourceTree = "<group>"; };
 		0321148C17402CCB0050CCF5 /* the-hobbit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "the-hobbit.jpg"; sourceTree = "<group>"; };
 		0321148D17402CCB0050CCF5 /* two-towers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "two-towers.jpg"; sourceTree = "<group>"; };
+		03DFE05417C0B7620032CC48 /* EVAllBooksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVAllBooksViewController.h; sourceTree = "<group>"; };
+		03DFE05517C0B7620032CC48 /* EVAllBooksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVAllBooksViewController.m; sourceTree = "<group>"; };
+		03DFE05C17C178900032CC48 /* icon-authors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-authors.png"; sourceTree = "<group>"; };
+		03DFE05E17C178A10032CC48 /* icon-authors@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-authors@2x.png"; sourceTree = "<group>"; };
+		03DFE05F17C178A10032CC48 /* icon-books.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-books.png"; sourceTree = "<group>"; };
+		03DFE06017C178A10032CC48 /* icon-books@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-books@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +166,8 @@
 				0321141C17402A9F0050CCF5 /* EVAppDelegate.h */,
 				0321141D17402A9F0050CCF5 /* EVAppDelegate.m */,
 				0321141417402A9F0050CCF5 /* Supporting Files */,
+				03DFE05417C0B7620032CC48 /* EVAllBooksViewController.h */,
+				03DFE05517C0B7620032CC48 /* EVAllBooksViewController.m */,
 			);
 			path = "Tabbed Library";
 			sourceTree = "<group>";
@@ -176,6 +189,7 @@
 		0321147017402CCB0050CCF5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				03DFE05717C170EF0032CC48 /* Icons */,
 				0321147117402CCB0050CCF5 /* Books.plist */,
 				0321147217402CCB0050CCF5 /* Images */,
 			);
@@ -214,6 +228,17 @@
 				0321148D17402CCB0050CCF5 /* two-towers.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		03DFE05717C170EF0032CC48 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				03DFE05E17C178A10032CC48 /* icon-authors@2x.png */,
+				03DFE05F17C178A10032CC48 /* icon-books.png */,
+				03DFE06017C178A10032CC48 /* icon-books@2x.png */,
+				03DFE05C17C178900032CC48 /* icon-authors.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +325,10 @@
 				032114A717402CCB0050CCF5 /* stone.jpg in Resources */,
 				032114A817402CCB0050CCF5 /* the-hobbit.jpg in Resources */,
 				032114A917402CCB0050CCF5 /* two-towers.jpg in Resources */,
+				03DFE05D17C178900032CC48 /* icon-authors.png in Resources */,
+				03DFE06117C178A10032CC48 /* icon-authors@2x.png in Resources */,
+				03DFE06217C178A10032CC48 /* icon-books.png in Resources */,
+				03DFE06317C178A10032CC48 /* icon-books@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +344,7 @@
 				0321142D17402B2F0050CCF5 /* EVAuthorsViewController.m in Sources */,
 				0321142E17402B2F0050CCF5 /* EVBooksViewController.m in Sources */,
 				0321142F17402B2F0050CCF5 /* EVBookCoverViewController.m in Sources */,
+				03DFE05617C0B7620032CC48 /* EVAllBooksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +459,7 @@
 				0321142917402A9F0050CCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
